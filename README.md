@@ -10,5 +10,6 @@
 - :PlugInstall
 
 6. Place these files on each project root folder
+- Check this lines to copy with a shortcut from terminal [https://github.com/jesusaguilera/terminal_customized/blob/9142d8b53f2c6f7be054c4033da7e08b8bfb9b91/bash_profile_5_11_18.txt#L48](https://github.com/jesusaguilera/terminal_customized/blob/9142d8b53f2c6f7be054c4033da7e08b8bfb9b91/bash_profile_5_11_18.txt#L48)
 - .tern-project
 - .jshintrc
