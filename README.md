@@ -1,3 +1,5 @@
+brew install nvim
+
 ~/.local/share/nvim
 ~/.config/nvim/init.vim
 
