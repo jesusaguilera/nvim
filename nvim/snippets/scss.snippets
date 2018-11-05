@@ -1,0 +1,174 @@
+# comments
+snippet cm 
+	/*
+
+   * ${1:Name}
+   */
+
+
+snippet c
+	// ${1:Name}
+
+
+
+# mixins
+snippet @m
+	@mixin ${1:Name} (${2:argument}) {
+		${3: //content}
+	}
+
+
+
+# each 
+snippet each
+	@each ${1:Name} in ${2:Name} {
+		.${1:Name};	
+	}
+
+
+
+# each 
+snippet for
+	@for ${1:Name} from 1 through 3 {
+		.item-${1:Name} {...}
+	}
+
+
+# include 
+snippet @i
+	@include ${1:Name};
+
+
+# mediaQuery
+snippet media 
+	@media screen and (${1:Name}: ${2:argument}) {
+	}
+
+snippet mediab 
+  @media ( min-width: $screen-${1:Name}-min ) {
+   }
+
+
+# background
+snippet b
+	background: transparent url("${1:Name}") 0 0 no-repeat;
+
+snippet bc
+	background-color: #${1:Name};
+
+snippet bp
+	background-position: 0 0;
+
+snippet br
+	background-repeat: no-repeat;
+
+snippet bs
+	background-size: cover;
+
+
+
+# Border
+snippet bo
+	border: ${1:Name};
+
+snippet bot
+	border-top: ${1:Name};
+
+snippet bob
+	border-bottom: ${1:Name};
+
+snippet bol
+	border-left: ${1:Name};
+
+snippet bor
+	border-right: ${1:Name};
+
+
+
+# Colors
+snippet c
+	color: ${1:Name};
+
+
+# Width & Height
+snippet w
+	width: ${1:Name};
+snippet mw
+	max-width: ${1:Name};
+snippet h
+	height: ${1:Name};	
+snippet mh
+	max-height: ${1:Name};
+
+
+# Display
+snippet d
+	display: ${1:Name};
+
+
+# float
+snippet fl
+	float: ${1:Name};
+
+
+# Font
+snippet fs
+	font-size: ${1:Name};
+snippet fw
+	font-weight: ${1:Name};
+
+
+# Line-Height
+snippet lh
+	line-height: ${1:Name};
+
+
+# Positions
+snippet p
+	position: ${1:Name};
+snippet pt
+	top: ${1:Name};
+snippet pb
+	bottom: ${1:Name};
+snippet pl
+	left: ${1:Name};
+snippet pr
+	right: ${1:Name};
+snippet z
+	z-index: ${1:Name};
+
+
+# Text
+snippet ta
+	text-align: ${1:Name};
+snippet td
+	text-decoration: ${1:Name};
+snippet tt	
+	text-transform: ${1:Name};
+
+
+#margins
+snippet m
+	margin: ${1:Name};
+snippet mt
+	margin-top: ${1:Name};
+
+snippet mb
+	margin-bottom: ${1:Name};
+
+snippet ml
+	margin-left: ${1:Name};
+
+snippet mr
+	margin-right: ${1:Name};
+#paddings
+snippet pd
+	padding: ${1:Name};
+snippet pdt
+	padding-top: ${1:Name};
+snippet pdb
+	padding-bottom: ${1:Name};
+snippet pdl
+	padding-left: ${1:Name};
+snippet pdr
+	padding-right: ${1:Name};
