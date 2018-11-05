@@ -1,13 +1,15 @@
 {
   "plugins": {
     "es_modules": {},
-    "node": {}
+    "node": {},
+    "jsx": {}
   },
   "libs": [
     "ecma5",
     "ecma6",
     "browser",
-    "jquery"
+    "jquery",
+    "react"
   ],
   "ecmaVersion": 6
 }
