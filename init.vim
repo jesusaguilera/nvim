@@ -28,7 +28,7 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'matze/vim-move'
 
 " Dev icons on Nerdtree
-Plug 'ryanoasis/vim-devicons' " After install this plugins install InconsolataGo or InconsolataLGC from NerdFonts
+Plug 'ryanoasis/vim-devicons' " After installing this plugins install InconsolataGo or InconsolataLGC from NerdFonts
 
 " Insensitive searching
 Plug 'tpope/vim-abolish'
@@ -256,7 +256,7 @@ set clipboard=unnamed
 " Set a dictionary for autocomplete
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set dictionary+=~/.vim/snippets/*
-set complete+=k~/.vim/dict/dict.txt
+" set complete+=k~/.vim/dict/dict.txt
 
 
 
@@ -266,7 +266,7 @@ set complete+=k~/.vim/dict/dict.txt
 "Highlight on select line
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  hi Search cterm=NONE ctermfg=white ctermbg=blue
-hi Visual cterm=NONE guibg=#9BB1D3
+" hi Visual cterm=NONE guibg=#9BB1D3
 "
 " CursorLine & cursorcolumn
 "
