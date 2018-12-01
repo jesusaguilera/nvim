@@ -119,8 +119,6 @@ set mat=5                         "how many tenths of a second to blink matching
 
 
 
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -342,10 +340,13 @@ let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_jump = 0
-highlight SyntasticErrorSign guifg=white guibg=red
+highlight SyntasticErrorSign guifg=#FF4E4E guibg=NONE
+highlight SyntasticWarningSign guifg=#FFE96E guibg=NONE
+" highlight SyntasticErrorSign guifg=white guibg=red
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
 
 
 
@@ -417,6 +418,7 @@ let g:move_key_modifier = 'C'
 " NerdTree plugins shows hidden files
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let NERDTreeShowHidden=1
+let g:NERDTreeWinSize=45
 
 
 
@@ -454,7 +456,10 @@ nnoremap <C-x> :set nonumber!<CR>
 " Show bufexplorer
 nnoremap · :BufExplorer<CR>
 
-
+" Wrapping between quotes
+" To get quotes betweeen seleceted text to do: c"<C-r>""
+nnoremap <C-w>" ciw""<Esc>P
+nnoremap <C-w>' ciw''<Esc>P
 
 
 
@@ -590,3 +595,12 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.local/share/nvim/snippets'
+
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Avoid new line with comment after doing line break
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType * set formatoptions-=cr
