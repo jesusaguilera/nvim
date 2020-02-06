@@ -49,8 +49,8 @@ Plug 'jlanzarotta/bufexplorer'
 
 " Syntax
 Plug 'cakebaker/scss-syntax.vim'
-Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'othree/html5.vim'
 Plug 'tpope/vim-unimpaired'
 
@@ -58,7 +58,6 @@ Plug 'tpope/vim-unimpaired'
 " Diff git conflicts
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
-Plug 'zivyangll/git-blame.vim'
 
 " Air line
 Plug 'vim-airline/vim-airline'
@@ -71,10 +70,6 @@ Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'Shougo/neco-syntax'
-
-
-" Chrome Dev-Tools
-Plug 'carlosrocha/vim-chrome-devtools', { 'do': 'npm install && npm run build' }
 
 
 " List ends here. Plugins become visible to Vim after this call.
@@ -90,11 +85,11 @@ set laststatus=2                  "Always show the statusline
 set encoding=utf-8                "Necessary to show Unicode glyphs
 set hidden
 set mouse=a                        "Mouse move
-set tabstop=2                     "a tab is four spaces
-set softtabstop=2                 "yep, four
+set tabstop=4                     "a tab is four spaces
+set softtabstop=4                 "yep, four
 set modifiable                    "make file modifacable (on nerdtree)
 set number                        "always show line numbers
-set shiftwidth=2                  "number of sapces to use for autoindenting
+set shiftwidth=4                  "number of sapces to use for autoindenting
 set shiftround                    "use multiple of shiftwidth when indenting whit '<' and  '>>'
 set diffopt+=vertical             "Switch to Vertical on diff
 set showmatch                     "set shwo matching parenthesis
@@ -384,7 +379,7 @@ au BufRead,BufNewFile *.scss set filetype=scss
 au FileType html,xhtml,erb setl ofu=htmlcomplete#CompleteTags
 au FileType css,scss setl ofu=csscomplete#CompleteCSS
 " au FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-au FileType javascript.jsx setlocal sw=2 sts=2 et
+
 
 
 
@@ -498,6 +493,7 @@ let g:javascript_plugin_flow = 1
 
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Load another colorscheme for Gdiff
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -510,55 +506,54 @@ endif
 " Use Deoplete
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:deoplete#enable_at_startup = 1
-
 " Set bin if you have many instalations
-" let g:deoplete#sources#ternjs#tern_bin = '/usr/local/bin/tern'
-" let g:deoplete#sources#ternjs#timeout = 1
+let g:deoplete#sources#ternjs#tern_bin = '/usr/local/bin/tern'
+let g:deoplete#sources#ternjs#timeout = 1
 
 " Whether to include the types of the completions in the result data. Default: 0
-" let g:deoplete#sources#ternjs#types = 1
+let g:deoplete#sources#ternjs#types = 1
 
 " Whether to include the distance (in scopes for variables, in prototypes for 
 " properties) between the completions and the origin position in the result 
 " data. Default: 0
-" let g:deoplete#sources#ternjs#depths = 1
+let g:deoplete#sources#ternjs#depths = 1
 
 " Whether to include documentation strings (if found) in the result data.
 " Default: 0
-" let g:deoplete#sources#ternjs#docs = 0
+let g:deoplete#sources#ternjs#docs = 0
 
 " When on, only completions that match the current word at the given point will
 " be returned. Turn this off to get all results, so that you can filter on the 
 " client side. Default: 1
-" let g:deoplete#sources#ternjs#filter = 0
+let g:deoplete#sources#ternjs#filter = 0
 
 " Whether to use a case-insensitive compare between the current word and 
 " potential completions. Default 0
-" let g:deoplete#sources#ternjs#case_insensitive = 1
+let g:deoplete#sources#ternjs#case_insensitive = 1
 
 " When completing a property and no completions are found, Tern will use some 
 " heuristics to try and return some properties anyway. Set this to 0 to 
 " turn that off. Default: 1
-" let g:deoplete#sources#ternjs#guess = 0
+let g:deoplete#sources#ternjs#guess = 0
 
 " Determines whether the result set will be sorted. Default: 1
-" let g:deoplete#sources#ternjs#sort = 0
+let g:deoplete#sources#ternjs#sort = 0
 
 " When disabled, only the text before the given position is considered part of 
 " the word. When enabled (the default), the whole variable name that the cursor
 " is on will be included. Default: 1
-" let g:deoplete#sources#ternjs#expand_word_forward = 0
+let g:deoplete#sources#ternjs#expand_word_forward = 0
 
 " Whether to ignore the properties of Object.prototype unless they have been 
 " spelled out by at least two characters. Default: 1
-" let g:deoplete#sources#ternjs#omit_object_prototype = 0
+let g:deoplete#sources#ternjs#omit_object_prototype = 0
 
 " Whether to include JavaScript keywords when completing something that is not 
 " a property. Default: 0
-" let g:deoplete#sources#ternjs#include_keywords = 1
+let g:deoplete#sources#ternjs#include_keywords = 1
 
 " If completions should be returned when inside a literal. Default: 1
-" let g:deoplete#sources#ternjs#in_literal = 0
+let g:deoplete#sources#ternjs#in_literal = 0
 
 "Add extra filetypes
 let g:deoplete#sources#ternjs#filetypes = [
@@ -568,8 +563,8 @@ let g:deoplete#sources#ternjs#filetypes = [
                 \ '...'
                 \ ]
 " Use tern_for_vim.
-" let g:tern#command = ["tern"]
-" let g:tern#arguments = ["--persistent"]
+let g:tern#command = ["tern"]
+let g:tern#arguments = ["--persistent"]
 
 
 
