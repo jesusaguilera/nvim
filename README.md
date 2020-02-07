@@ -9,8 +9,7 @@
 5. Install plugins with: 
 - :PlugInstall
 
-6. run on nvim, the output look like:
-- :checkhealth
+6. run :checkhealth on nvim, the output look like:
 ![alt text](https://user-images.githubusercontent.com/251450/42421117-001a81ee-8303-11e8-929a-91da4ac9feea.png)
 
 7. Place these files on each project root folder
