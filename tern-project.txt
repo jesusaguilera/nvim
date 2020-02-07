@@ -1,9 +1,5 @@
 {
-  "plugins": {
-    "es_modules": {},
-    "node": {},
-    "jsx": {}
-  },
+  "ecmaVersion": 6,
   "libs": [
     "ecma5",
     "ecma6",
@@ -11,5 +7,12 @@
     "jquery",
     "react"
   ],
-  "ecmaVersion": 6
+  "plugins": {
+    "es_modules": {},
+    "node": {},
+    "jsx": {}
+  },
+  "loadEagerly": [
+    "node_modules/expect/build/**/*.js"
+  ]
 }
