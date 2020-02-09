@@ -487,6 +487,15 @@ nnoremap · :BufExplorer<CR>
 nnoremap <C-w>" ciw""<Esc>P
 nnoremap <C-w>' ciw''<Esc>P
 
+" Coc prettier format
+vmap <C-e>  <Plug>(coc-format-selected)
+nmap <C-e>  <Plug>(coc-format-selected)
+
+" Git blame line
+nnoremap ii :<C-u>call gitblame#echo()<CR>
+
+
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -639,6 +648,7 @@ autocmd FileType * set formatoptions-=cr
 " Coc prettier extension
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-vmap <C-e>  <Plug>(coc-format-selected)
-nmap <C-e>  <Plug>(coc-format-selected)
+
+
+
 
