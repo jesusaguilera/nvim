@@ -1,6 +1,6 @@
 1. brew install nvim
 
-2. Copy nvim foler to \~/.local/share (~/.local/share/nvim)
+2. Copy nvim folder to \~/.local/share (~/.local/share/nvim)
 3. Copy init.vim to \~/.config/nvim (~/.config/nvim/init.vim)
 
 4. Install Plug on Neovim
