@@ -1,0 +1,50 @@
+{
+  // coc settings
+  "coc.preferences.snippets.enable": true,
+  "coc.preferences.snippetStatusText": "🌈",
+
+  // diagnostic
+  "diagnostic.infoSign": "i⚑",
+  "diagnostic.hintSign": "*⚑",
+  "diagnostic.warningSign": "!⚑",
+  "diagnostic.errorSign": "✖",
+  "diagnostic.enable": true,
+  "diagnostic.signOffset": 9999999,
+  "diagnostic.highlightOffset": 9999999,
+  "diagnostic.refreshOnInsertMode": true,
+
+  // suggest
+  "suggest.detailField": "abbr",
+  "suggest.detailMaxLength": 30,
+  "suggest.maxCompleteItemCount": 50,
+  "suggest.maxPreviewWidth": 80,
+  "suggest.triggerAfterInsertEnter": false,
+  "coc.preferences.printWidth:": 120,
+
+  // html
+  "html.suggest.ionic": true,
+
+  // emoji
+  "coc.source.emoji.filetypes": [
+    "markdown",
+    "gitcommit"
+  ],
+
+  "coc.preferences.formatOnSaveFiletypes": [
+    "html",
+    "css",
+    "scss",
+    "Markdown",
+    "json",
+    "javascript",
+    "javascript.jsx",
+    "javascriptreact"
+  ]
+},
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  bracketSpacing: true
+}
