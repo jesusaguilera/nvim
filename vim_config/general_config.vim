@@ -20,8 +20,9 @@ set guioptions+=b
 set wildmenu                      "turn on wild menu
 set wildmode=longest,list         "filename completion
 set ruler                         "Always show current positions along the bottom
-set cmdheight=1                   "the command bar is 1 high
+set cmdheight=2                   "the command bar is 1 high
 set showmatch                     "show matching brackets
+set hidden                        "if hidden is not set, TextEdit might fail.
 
 "Indent 
 set shiftwidth=2                  "number of sapces to use for autoindenting

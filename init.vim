@@ -1,5 +1,6 @@
 so ~/vim_config/general_config.vim
 so ~/vim_config/plug.vim
+so ~/vim_config/plug_config.vim
 so ~/vim_config/theme.vim
 so ~/vim_config/maps.vim
 
@@ -17,36 +18,6 @@ set undoreload=10000              "maximum number lines to save for undo on a bu
 " Avoid new line with comment after doing line break
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd FileType * set formatoptions-=cr
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"vim-airline"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
-let g:airline_powerline_fonts = 1
-let g:airline_theme='owo'
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-
-" Enable the list of buffers
-let g:airline#extensions#tabline#enabled = 1
-" Show just the filename
-let g:airline#extensions#tabline#fnamemod = ':t'"
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim-move
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:move_key_modifier = 'C'
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" NerdTree
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let NERDTreeShowHidden=1 "NerdTree plugins shows hidden files
-let g:NERDTreeWinSize=35 "NerdTree width
-let NERDTreeCascadeSingleChildDir=0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
