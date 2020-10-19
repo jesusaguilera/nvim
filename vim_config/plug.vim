@@ -32,6 +32,8 @@ Plug 'tpope/vim-abolish'
 
 " Highlight closing tag
 Plug 'adelarsq/vim-matchit'
+Plug 'alvan/vim-closetag'
+Plug 'jiangmiao/auto-pairs'
 
 " Show color on display from color code
 Plug 'lilydjwg/colorizer'

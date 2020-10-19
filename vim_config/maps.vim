@@ -7,6 +7,10 @@ let mapleader=" "
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 
+"Movement on insert mode
+imap <C-k> <up>
+imap <C-j> <down>
+
 "Close all buffers
 nnoremap <Leader>ca :%bd<CR>
 
@@ -46,6 +50,8 @@ nnoremap · :BufExplorer<CR>
 " To get quotes betweeen seleceted text to do: c"<C-r>""
 nnoremap <Leader>" ciw""<Esc>P
 nnoremap <Leader>' ciw''<Esc>P
+nnoremap <Leader>{ ciw{}<Esc>P
+nnoremap <Leader>[ ciw[]<Esc>P
 
 " Coc prettier format
 xmap <Leader>p  <Plug>(coc-format-selected)
@@ -61,8 +67,7 @@ nmap <silent> gr <Plug>(coc-references)
 nnoremap <Leader>b :<C-u>call gitblame#echo()<CR>
 
 " Go to begin of line that starts with gap
-" nnoremap bg 0w<Esc>
-
+nnoremap <Leader>bg 0w<Esc>
 
 "FZF Search files
 map <Leader>f :Files!<CR> 
