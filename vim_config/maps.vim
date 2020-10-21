@@ -14,7 +14,6 @@ imap <C-j> <down>
 "Close all buffers
 nnoremap <Leader>ca :%bd<CR>
 
-
 "Ag searcher
 nnoremap <Leader>ag :Ag<SPACE>
 

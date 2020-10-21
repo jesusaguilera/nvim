@@ -7,8 +7,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Declare the list of plugins.
 
 " Themes
-Plug 'cocopon/iceberg.vim'
-
+" Plug 'cocopon/iceberg.vim'
+Plug 'arcticicestudio/nord-vim'
 
 " Utils
 Plug 'MarcWeber/vim-addon-mw-utils'
