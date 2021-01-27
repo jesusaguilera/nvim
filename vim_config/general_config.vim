@@ -44,9 +44,6 @@ set smartcase                     "ignore case if search pattern is all lowercas
 
 "Cursor
 set guicursor= "Block cursor and blinking
-" hi CursorLine   cterm=NONE ctermbg=239 ctermfg=white guibg=#1D2326 "Highlight line
-" hi CursorColumn cterm=NONE ctermbg=239 ctermfg=white guibg=#1D2326 "Highlight column
-" set cursorline! cursorcolumn! 
 
 "tmux clipboard copy
 set clipboard=unnamedplus

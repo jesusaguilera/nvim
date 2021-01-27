@@ -89,3 +89,17 @@ let g:closetag_shortcut = '>'
 " Add > at current position without closing the current tag, default is ''
 "
 let g:closetag_close_shortcut = '<leader>>'
+
+
+" Snippets (Trigger configuration (Optional))
+"let g:UltiSnipsExpandTrigger="<C-l>"
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" FZF
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Always enable preview window on the right with 60% width
+let g:fzf_preview_window = 'right:60%'
+" [[B]Commits] Customize the options used by 'git log':
+let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
+

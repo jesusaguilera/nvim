@@ -21,7 +21,7 @@ autocmd FileType * set formatoptions-=cr
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Folding method
+" Folding method
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set foldmethod=indent  "fold based on indent
 set foldnestmax=10     "deepset fold is 10 levels
@@ -32,15 +32,7 @@ let g:ag_prg="<custom-ag-path-goes-here> --vimgrep"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vim-javascript configuration
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:javascript_plugin_jsdoc = 1
-" let g:javascript_plugin_ngdoc = 1
-" let g:javascript_plugin_flow = 1
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Load another colorscheme for Gdiff
+" Load another colorscheme for Gdiff
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if &diff
   colorscheme up
@@ -104,13 +96,3 @@ set suffixesadd+=.js
 " Show differences 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_max_signs = 500  " default value (Vim < 8.1.0614, Neovim < 0.4.0)
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" FZF
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Always enable preview window on the right with 60% width
-let g:fzf_preview_window = 'right:60%'
-" [[B]Commits] Customize the options used by 'git log':
-let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
-

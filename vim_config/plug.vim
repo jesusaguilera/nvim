@@ -9,6 +9,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Themes
 " Plug 'cocopon/iceberg.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
 
 " Utils
 Plug 'MarcWeber/vim-addon-mw-utils'
@@ -16,6 +17,7 @@ Plug 'tomtom/tlib_vim'
 
 " Comments 
 Plug 'tomtom/tcomment_vim'
+
 
 " Snippets
 Plug 'Shougo/neosnippet.vim'

@@ -47,10 +47,10 @@ nnoremap · :BufExplorer<CR>
 
 " Wrapping between quotes
 " To get quotes betweeen seleceted text to do: c"<C-r>""
-nnoremap <Leader>" ciw""<Esc>P
-nnoremap <Leader>' ciw''<Esc>P
-nnoremap <Leader>{ ciw{}<Esc>P
-nnoremap <Leader>[ ciw[]<Esc>P
+xmap <Leader>" c"<Esc>p
+xmap <Leader>' c'<Esc>p
+xmap <Leader>{ c{<Esc>p
+xmap <Leader>[ c[<Esc>p
 
 " Coc prettier format
 xmap <Leader>p  <Plug>(coc-format-selected)
