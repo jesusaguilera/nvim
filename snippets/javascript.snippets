@@ -17,9 +17,11 @@ snippet f=
 # Anonymous Function
 snippet f
 	function(${1}) {${2}};
+
 # if
 snippet if
 	if(${1:true}) {${2}};
+
 # if ... else
 snippet ife
 	if(${1:true}) {
@@ -27,12 +29,14 @@ snippet ife
   } else{
     ${3}
   };
+
 # tertiary conditional
 snippet ifin
 	${1:/* condition */} && ${3:a}
 
 snippet ift
 	${1:/* condition */} ? ${2:a} : ${3:b}
+
 # switch
 snippet switch
 	switch(${1:expression}) {
@@ -43,6 +47,7 @@ snippet switch
 		default:
 			${2:// code}
 	}
+
 # case
 snippet case
 	case '${1:case}':
@@ -139,13 +144,23 @@ snippet ptsy
 snippet imp
     import React from "react";
 snippet fc
-    const ${1} = () => {
+    const ${1} = (${2}) => {
       return(
-        ${2}
+        ${3}
       )
     }
 snippet ed
     export default ${1}
+
+snippet rcc
+  import React, { useState, useEffect } from 'react';
+
+  const ${1} = (props) => {
+    return (
+    );
+  };
+
+  export default ${2};
 
 # Html tags
 snippet base
