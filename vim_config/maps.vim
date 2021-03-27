@@ -7,10 +7,6 @@ let mapleader=" "
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 
-"Movement on insert mode
-imap <C-k> <up>
-imap <C-j> <down>
-
 "Close all buffers
 nnoremap <Leader>ca :%bd<CR>
 
@@ -36,7 +32,7 @@ map <Leader>cc  <c-_>b
 "Exit from insert mode
 imap jj <Esc>
 
-"Shortcut for newline whitout insert mode
+"Shortcut for newline whitout visual mode
 nmap <S-o> i<Enter><Esc>k<cr>
 
 " Toggle line numbering
@@ -52,7 +48,7 @@ xmap <Leader>' c'<Esc>p
 xmap <Leader>{ c{<Esc>p
 xmap <Leader>[ c[<Esc>p
 
-" Coc prettier format
+" Coc {prettier} format
 xmap <Leader>p  <Plug>(coc-format-selected)
 nmap <Leader>p  <Plug>(coc-format-selected)
 
@@ -74,3 +70,13 @@ map <Leader>f :Files!<CR>
 nmap <Leader>h :History<CR> 
 "FZF Search files
 map <Leader>bc :BCommits!<CR> 
+
+" In insert or command mode, move normally by using Ctrl
+inoremap <S-h> <Left>
+inoremap <S-j> <Down>
+inoremap <S-k> <Up>
+inoremap <S-l> <Right>
+cnoremap <S-h> <Left>
+cnoremap <S-j> <Down>
+cnoremap <S-k> <Up>
+cnoremap <S-l> <Right>
