@@ -64,6 +64,9 @@ nnoremap <Leader>b :<C-u>call gitblame#echo()<CR>
 " Go to begin of line that starts with gap
 nnoremap <Leader>bg 0w<Esc>
 
+" Delete word above cursor
+nmap <Leader>d bde
+
 "FZF Search files
 map <Leader>f :Files!<CR> 
 "FZF Show history ( last files modified )
@@ -72,11 +75,15 @@ nmap <Leader>h :History<CR>
 map <Leader>bc :BCommits!<CR> 
 
 " In insert or command mode, move normally by using Ctrl
-inoremap <S-h> <Left>
-inoremap <S-j> <Down>
-inoremap <S-k> <Up>
-inoremap <S-l> <Right>
-cnoremap <S-h> <Left>
-cnoremap <S-j> <Down>
-cnoremap <S-k> <Up>
-cnoremap <S-l> <Right>
+" inoremap <silent> <C-j> <ESC><Down><Right>i
+" inoremap <silent> <C-k> <ESC><Up><Right>i
+" inoremap <silent> <C-l> <ESC><Right><Right>i
+" inoremap <silent> <C-h> <ESC>i
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+cnoremap <C-h> <Left>
+cnoremap <C-j> <Down>
+cnoremap <C-k> <Up>
+cnoremap <C-l> <Right>
