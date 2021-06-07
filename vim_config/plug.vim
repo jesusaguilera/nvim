@@ -26,6 +26,9 @@ Plug 'Shougo/neosnippet-snippets'
 " Move lines 
 Plug 'matze/vim-move'
 
+" Jump easily to word or lines
+Plug 'easymotion/vim-easymotion'
+
 " Dev icons on Nerdtree
 Plug 'ryanoasis/vim-devicons' " After installing this plugins install InconsolataGo or InconsolataLGC from NerdFonts
 
@@ -79,6 +82,9 @@ Plug 'terryma/vim-multiple-cursors'
 " Gutentag (Ctags regenerator)
 Plug 'ludovicchabant/vim-gutentags'
 
+" Import automatically
+Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
+
 " Show changes
 " Plug 'airblade/vim-gitgutter'
 
@@ -91,6 +97,9 @@ Plug 'Yggdroot/indentLine'
 
 " Editing Ruby on Rails applications
 Plug 'tpope/vim-rails'
+
+" Support for glsl
+Plug 'tikhomirov/vim-glsl'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()

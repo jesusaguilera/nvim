@@ -3,18 +3,26 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader=" "
 
-"Save & quit
+"Save
 nnoremap <Leader>w :w<CR>
+
+"Close all buffers
 nnoremap <Leader>q :q<CR>
 
 "Close all buffers
 nnoremap <Leader>ca :%bd<CR>
+
+"Close current buffers
+nnoremap <Leader>cb :bd<CR>
 
 "Ag searcher
 nnoremap <Leader>ag :Ag<SPACE>
 
 "Go last modification
 nmap <Leader>l `.
+
+"Add ; to end of the line
+nmap <Leader>; $a;<Esc>
 
 "Indent all file
 nmap <Leader>i gg=G`.
@@ -39,14 +47,20 @@ nmap <S-o> i<Enter><Esc>k<cr>
 nnoremap <C-x> :set nonumber!<CR>
 
 "Buffer explorer
-nnoremap · :BufExplorer<CR>
+" nnoremap · :BufExplorer<CR>
+nnoremap · :Buffers<CR>
+
+"Tabs navigation
+map <Leader>tp :tabprevious<CR>
+map <Leader>tn :tabnext<CR>
 
 " Wrapping between quotes
 " To get quotes betweeen seleceted text to do: c"<C-r>""
-xmap <Leader>" c"<Esc>p
-xmap <Leader>' c'<Esc>p
+xmap <Leader>" di"<Esc><Esc>p
+xmap <Leader>' di'<Esc><Esc>p
 xmap <Leader>{ c{<Esc>p
 xmap <Leader>[ c[<Esc>p
+xmap <Leader>( c(<Esc>p
 
 " Coc {prettier} format
 xmap <Leader>p  <Plug>(coc-format-selected)
@@ -80,10 +94,10 @@ map <Leader>bc :BCommits!<CR>
 " inoremap <silent> <C-l> <ESC><Right><Right>i
 " inoremap <silent> <C-h> <ESC>i
 inoremap <C-h> <Left>
+cnoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
-cnoremap <C-h> <Left>
 cnoremap <C-j> <Down>
 cnoremap <C-k> <Up>
 cnoremap <C-l> <Right>
