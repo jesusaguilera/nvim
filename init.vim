@@ -96,3 +96,9 @@ set suffixesadd+=.js
 " Show differences 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_max_signs = 500  " default value (Vim < 8.1.0614, Neovim < 0.4.0)
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Show quotes on json file 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set conceallevel=0
