@@ -13,7 +13,18 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>ca :%bd<CR>
 
 "Close current buffers
-nnoremap <Leader>cb :bd<CR>
+nnoremap <Leader>cb :BD<CR>
+
+"Alternate between buffers
+nnoremap <Leader>ba :BA<CR>
+
+"Move forwards current buffer
+nnoremap <Leader>bn :BF<CR>
+
+"Move back current buffer
+nnoremap <Leader>bb :BB<CR>
+let g:BufKillCreateMappings = 0
+
 
 "Ag searcher
 nnoremap <Leader>ag :Ag<SPACE>
@@ -47,8 +58,8 @@ nmap <S-o> i<Enter><Esc>k<cr>
 nnoremap <C-x> :set nonumber!<CR>
 
 "Buffer explorer
-" nnoremap · :BufExplorer<CR>
-nnoremap · :Buffers<CR>
+nnoremap ¬∑ :BufExplorer<CR>
+" nnoremap ¬∑ :Buffers<CR>
 
 "Tabs navigation
 map <Leader>tp :tabprevious<CR>
