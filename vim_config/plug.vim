@@ -101,5 +101,11 @@ Plug 'tpope/vim-rails'
 " Support for glsl
 Plug 'tikhomirov/vim-glsl'
 
+" Support for pug files
+Plug 'digitaltoad/vim-pug'
+
+" Close buffer and keep split window
+Plug 'qpkorr/vim-bufkill'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
