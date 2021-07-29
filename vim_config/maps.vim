@@ -58,8 +58,8 @@ nmap <S-o> i<Enter><Esc>k<cr>
 nnoremap <C-x> :set nonumber!<CR>
 
 "Buffer explorer
-nnoremap ¬∑ :BufExplorer<CR>
-" nnoremap ¬∑ :Buffers<CR>
+nnoremap · :BufExplorer<CR>
+" nnoremap · :Buffers<CR>
 
 "Tabs navigation
 map <Leader>tp :tabprevious<CR>
