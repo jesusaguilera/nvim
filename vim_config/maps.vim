@@ -6,7 +6,7 @@ let mapleader=" "
 "Save
 nnoremap <Leader>w :w<CR>
 
-"Close all buffers
+"Close all
 nnoremap <Leader>q :q<CR>
 
 "Close all buffers
@@ -24,7 +24,6 @@ nnoremap <Leader>bn :BF<CR>
 "Move back current buffer
 nnoremap <Leader>bb :BB<CR>
 let g:BufKillCreateMappings = 0
-
 
 "Ag searcher
 nnoremap <Leader>ag :Ag<SPACE>
@@ -67,15 +66,15 @@ map <Leader>tn :tabnext<CR>
 
 " Wrapping between quotes
 " To get quotes betweeen seleceted text to do: c"<C-r>""
-xmap <Leader>" di"<Esc><Esc>p
-xmap <Leader>' di'<Esc><Esc>p
-xmap <Leader>{ c{<Esc>p
-xmap <Leader>[ c[<Esc>p
-xmap <Leader>( c(<Esc>p
+vmap <Leader>" di"<Esc><Esc>p
+vmap <Leader>' di'<Esc><Esc>p
+vmap <Leader>{ c{<Esc>p
+vmap <Leader>[ c[<Esc>p
+vmap <Leader>( c(<Esc>p
 
 " Coc {prettier} format
-xmap <Leader>p  <Plug>(coc-format-selected)
-nmap <Leader>p  <Plug>(coc-format-selected)
+xmap <Leader>p <Plug>(coc-format-selected)
+nmap <Leader>p <Plug>(coc-format-selected)
 
 " Coc GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
@@ -112,3 +111,13 @@ inoremap <C-l> <Right>
 cnoremap <C-j> <Down>
 cnoremap <C-k> <Up>
 cnoremap <C-l> <Right>
+
+
+" vim-grepper
+" nnoremap <leader>ss :Grepper -tool git<cr>
+nnoremap <Leader>ss :Grepper -tool ag<CR>
+"Search word under the cursor
+nnoremap <Leader>** :Grepper -tool ag -cword -noprompt<CR>
+
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)

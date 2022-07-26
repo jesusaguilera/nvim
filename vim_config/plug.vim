@@ -1,5 +1,3 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugins will be downloaded under the specified directory.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 call plug#begin('~/.local/share/nvim/plugged')
@@ -10,6 +8,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'cocopon/iceberg.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'olimorris/onedarkpro.nvim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Utils
 Plug 'MarcWeber/vim-addon-mw-utils'
@@ -51,19 +52,16 @@ Plug 'jasonshell/vim-svg-indent'
 Plug 'scrooloose/nerdtree'
 Plug 'jlanzarotta/bufexplorer'
 
-" Syntax
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'othree/html5.vim'
 Plug 'tpope/vim-unimpaired'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+
+" Syntax
+Plug 'sheerun/vim-polyglot'
 
 " Diff git conflicts
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'zivyangll/git-blame.vim'
+Plug 'ttys3/nvim-blamer.lua'
 
 " Air line
 Plug 'vim-airline/vim-airline'
@@ -71,6 +69,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 " MarkDown preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+
 
 "Coc: Make your Vim/Neovim as smart as VSCode.
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -80,7 +79,10 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'terryma/vim-multiple-cursors'
 
 " Gutentag (Ctags regenerator)
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
+
+"Find & Replace 
+Plug 'mhinz/vim-grepper'
 
 " Import automatically
 Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
@@ -106,6 +108,14 @@ Plug 'digitaltoad/vim-pug'
 
 " Close buffer and keep split window
 Plug 'qpkorr/vim-bufkill'
+
+" Barbar support to clickable tabs
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
+
+" Like Polacode plugin for VS
+Plug 'kristijanhusak/vim-carbon-now-sh'
+
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()

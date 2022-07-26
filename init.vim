@@ -4,7 +4,6 @@ so ~/vim_config/plug_config.vim
 so ~/vim_config/theme.vim
 so ~/vim_config/maps.vim
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Save history
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -38,15 +37,14 @@ if &diff
   colorscheme up
 endif
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NeoSnippet plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin key-mappings.
 " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
+smap <C-y>     <Plug>(neosnippet_expand_or_jump)
+imap <C-y>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-y>     <Plug>(neosnippet_expand_target)
 
 " SuperTab like snippets behavior.
 " Note: It must be 'imap' and 'smap'.  It uses <Plug> mappings.
@@ -98,7 +96,4 @@ set suffixesadd+=.js
 let g:gitgutter_max_signs = 500  " default value (Vim < 8.1.0614, Neovim < 0.4.0)
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Show quotes on json file 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set conceallevel=0
+

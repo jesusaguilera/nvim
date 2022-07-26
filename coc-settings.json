@@ -1,6 +1,11 @@
 {
   // coc settings
   "coc.preferences.snippets.enable": true,
+  "coc.preferences.snippets.extends": {
+    "cpp": ["c"],
+    "javascriptreact": ["javascript"],
+    "typescript": ["javascript"]
+  },
   "coc.preferences.snippetStatusText": "🌈",
 
   // diagnostic

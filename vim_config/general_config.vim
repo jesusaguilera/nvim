@@ -49,3 +49,4 @@ set guicursor= "Block cursor and blinking
 set clipboard=unnamedplus
 
 set relativenumber
+
