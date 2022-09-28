@@ -25,6 +25,7 @@ let g:move_key_modifier = 'C'
 let NERDTreeShowHidden=1 "NerdTree plugins shows hidden files
 let g:NERDTreeWinSize=35 "NerdTree width
 let NERDTreeCascadeSingleChildDir=0
+let NERDTreeQuitOnOpen=1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -195,3 +196,27 @@ let bufferline.icon_separator_inactive = '▎'
 let bufferline.icon_close_tab = 'x'
 let bufferline.icon_close_tab_modified = '●'
 let bufferline.icon_pinned = '車'
+
+
+
+
+ lua << EOF
+require('nightfox').setup({
+  options = {
+    styles = {
+      comments = "italic",
+      conditionals = "NONE",
+      constants = "NONE",
+      functions = "italic",
+      keywords = "bold",
+      numbers = "NONE",
+      operators = "NONE",
+      strings = "NONE",
+      types = "italic,bold",
+      variables = "NONE",
+    }
+  }
+})
+EOF
+
+

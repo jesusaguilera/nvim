@@ -95,5 +95,6 @@ set suffixesadd+=.js
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_max_signs = 500  " default value (Vim < 8.1.0614, Neovim < 0.4.0)
 
-
+hi xmlAttrib cterm=italic ctermfg=214
+hi jsxAttrib cterm=italic ctermfg=214
 

@@ -11,6 +11,9 @@ Plug 'morhetz/gruvbox'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'olimorris/onedarkpro.nvim'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+Plug 'EdenEast/nightfox.nvim'
 
 " Utils
 Plug 'MarcWeber/vim-addon-mw-utils'
@@ -119,3 +122,10 @@ Plug 'kristijanhusak/vim-carbon-now-sh'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
+
+let g:catppuccin_flavour = "macchiato" " latte, frappe, macchiato, mocha
+
+lua << EOF
+require("catppuccin").setup()
+EOF

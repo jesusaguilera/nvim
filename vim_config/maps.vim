@@ -91,6 +91,8 @@ nnoremap <Leader>bg 0w<Esc>
 " Delete word above cursor
 nmap <Leader>d bde
 
+nmap <Leader>a bvec
+
 "FZF Search files
 map <Leader>f :Files!<CR> 
 "FZF Show history ( last files modified )
