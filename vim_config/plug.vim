@@ -18,6 +18,10 @@ Plug 'EdenEast/nightfox.nvim'
 " Utils
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" Smooth Scroll
+Plug 'psliwka/vim-smoothie'
 
 " Comments 
 Plug 'tomtom/tcomment_vim'
@@ -73,7 +77,6 @@ Plug 'vim-airline/vim-airline-themes'
 " MarkDown preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
-
 "Coc: Make your Vim/Neovim as smart as VSCode.
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
@@ -122,10 +125,3 @@ Plug 'kristijanhusak/vim-carbon-now-sh'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
-
-
-let g:catppuccin_flavour = "macchiato" " latte, frappe, macchiato, mocha
-
-lua << EOF
-require("catppuccin").setup()
-EOF
