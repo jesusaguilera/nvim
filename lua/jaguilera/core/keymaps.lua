@@ -19,6 +19,8 @@ keymap.set("n", "x", '"_x"')
 keymap.set("n", "<leader>w", ":w<CR>")
 -- close nvim
 keymap.set("n", "<leader>q", ":q<CR>")
+-- close buffer
+keymap.set("n", "<leader>c", ":bd<CR>")
 
 -- increment/decrement numbers under the cursor pointer
 keymap.set("n", "<leader>+", "<C-a>") -- increment
