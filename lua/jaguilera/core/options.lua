@@ -38,7 +38,7 @@ opt.splitbelow = true
 opt.iskeyword:append("-")
 
 -- save history
-opt.undodir = "../../.vim/undodir" -- where to save undo histories
+opt.undodir = vim.fn.expand("~/.vim/undodir") -- where to save undo histories
 opt.undofile = true -- set undor directory
 opt.undolevels = 1000 -- maximum number of changes that can be undone
 opt.undoreload = 1000 -- Maximum number lines to save for undo on a buffer reload
