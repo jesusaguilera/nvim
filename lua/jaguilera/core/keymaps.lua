@@ -56,3 +56,11 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 keymap.set("n", "<leader>fH", "<cmd>Telescope oldfiles<cr>") -- list previous open files
 keymap.set("n", "<leader>fC", "<cmd>Telescope git_commits<cr>") -- list of commits
+
+-- normal mode (sneak-like)
+keymap.set("n", "s", "<cmd>HopChar2AC<CR>", { noremap = false })
+keymap.set("n", "S", "<cmd>HopChar2BC<CR>", { noremap = false })
+
+-- visual mode (sneak-like)
+keymap.set("v", "s", "<cmd>HopChar2AC<CR>", { noremap = false })
+keymap.set("v", "S", "<cmd>HopChar2BC<CR>", { noremap = false })
