@@ -242,11 +242,6 @@ _G.packer_plugins = {
     path = "/Users/jaguilera/.local/share/nvim/site/pack/packer/start/vim-multiple-cursors",
     url = "https://github.com/terryma/vim-multiple-cursors"
   },
-  ["vim-nightfly-guicolors"] = {
-    loaded = true,
-    path = "/Users/jaguilera/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
-    url = "https://github.com/bluz71/vim-nightfly-guicolors"
-  },
   ["vim-smoothie"] = {
     loaded = true,
     path = "/Users/jaguilera/.local/share/nvim/site/pack/packer/start/vim-smoothie",

@@ -12,9 +12,11 @@ require("nightfox").setup({
 			strings = "NONE",
 			types = "NONE",
 			variables = "bold",
+			CursorLine = "#000000",
 		},
 	},
 })
 
 -- setup must be called before loading
+vim.opt.cursorline = false
 vim.cmd("colorscheme nightfox")
