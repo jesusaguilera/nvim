@@ -37,6 +37,12 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
 
+-- move 1 more lines up or down in normal and visual selection modes.
+keymap.set("n", "<S-Up>", ":m .-2<CR>==")
+keymap.set("n", "<S-Down>", ":m .+1<CR>==")
+keymap.set("v", "<S-Up>", ":m '<-2<CR>gv=gv")
+keymap.set("v", "<S-Down>", ":m '>+1<CR>gv=gv")
+
 --------------------
 -- plugins keymaps
 --------------------
