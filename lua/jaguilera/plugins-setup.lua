@@ -121,6 +121,12 @@ return packer.startup(function(use)
 		end,
 	})
 
+	-- show color from color code
+	use("norcalli/nvim-colorizer.lua")
+
+	-- rainbow brackets
+	use("p00f/nvim-ts-rainbow")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
