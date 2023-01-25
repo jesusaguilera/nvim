@@ -66,7 +66,8 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-buffer") -- source for text in buffer
 	use("hrsh7th/cmp-path") -- source for file system paths
 	use("hrsh7th/nvim-cmp") -- completion plugin
-	use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" })
+	-- use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" })
+	use({ "codota/tabnine-nvim", run = "./dl_binaries.sh" })
 
 	-- snippets
 	use("L3MON4D3/LuaSnip") -- snippet engine
