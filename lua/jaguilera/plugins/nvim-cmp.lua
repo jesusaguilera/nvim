@@ -17,6 +17,10 @@ if not lspkind_status then
 end
 
 -- load vs-code like snippets from plugins (e.g. friendly-snippets)
+luasnip.filetype_extend("html", { "javascript", "javascriptreact" })
+luasnip.filetype_extend("javascript", { "html", "javascriptreact" })
+luasnip.filetype_extend("javascriptreact", { "html" })
+luasnip.filetype_extend("typescriptreact", { "html" })
 require("luasnip/loaders/from_vscode").lazy_load()
 
 vim.opt.completeopt = "menu,menuone,noselect"
