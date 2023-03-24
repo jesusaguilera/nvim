@@ -66,6 +66,7 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-buffer") -- source for text in buffer
 	use("hrsh7th/cmp-path") -- source for file system paths
 	use("hrsh7th/nvim-cmp") -- completion plugin
+	use("hrsh7th/cmp-emoji") -- Markdown emoji
 	-- use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" })
 	use({ "codota/tabnine-nvim", run = "./dl_binaries.sh" })
 

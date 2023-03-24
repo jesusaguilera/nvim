@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/jaguilera/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
+  ["cmp-emoji"] = {
+    loaded = true,
+    path = "/Users/jaguilera/.local/share/nvim/site/pack/packer/start/cmp-emoji",
+    url = "https://github.com/hrsh7th/cmp-emoji"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/jaguilera/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
