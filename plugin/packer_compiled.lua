@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/jaguilera/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["codeium.vim"] = {
+    loaded = true,
+    path = "/Users/jaguilera/.local/share/nvim/site/pack/packer/start/codeium.vim",
+    url = "https://github.com/Exafunction/codeium.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/jaguilera/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -165,6 +170,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jaguilera/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  neural = {
+    loaded = true,
+    path = "/Users/jaguilera/.local/share/nvim/site/pack/packer/start/neural",
+    url = "https://github.com/dense-analysis/neural"
   },
   ["nightfox.nvim"] = {
     loaded = true,

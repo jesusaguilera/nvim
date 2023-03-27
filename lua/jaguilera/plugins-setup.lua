@@ -136,6 +136,13 @@ return packer.startup(function(use)
 	-- rainbow brackets
 	use("p00f/nvim-ts-rainbow")
 
+	-- Neural AI
+	use("dense-analysis/neural")
+	-- use("MunifTanjim/nui.nvim")
+
+	-- As Github Copilot
+	use("Exafunction/codeium.vim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

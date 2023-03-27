@@ -63,6 +63,9 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 keymap.set("n", "<leader>fH", "<cmd>Telescope oldfiles<cr>") -- list previous open files
 keymap.set("n", "<leader>fC", "<cmd>Telescope git_commits<cr>") -- list of commits
 
+-- neural
+keymap.set("n", "<leader>fa", "<Plug>(neural_prompt)") -- find files within current working directory, respects .gitignore
+
 -- normal mode (sneak-like)
 keymap.set("n", "s", "<cmd>HopChar2AC<CR>", { noremap = false })
 keymap.set("n", "S", "<cmd>HopChar2BC<CR>", { noremap = false })
