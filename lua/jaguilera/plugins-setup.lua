@@ -68,7 +68,7 @@ return packer.startup(function(use)
 	use("hrsh7th/nvim-cmp") -- completion plugin
 	use("hrsh7th/cmp-emoji") -- Markdown emoji
 	-- use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" })
-	use({ "codota/tabnine-nvim", run = "./dl_binaries.sh" })
+	-- use({ "codota/tabnine-nvim", run = "./dl_binaries.sh" })
 
 	-- snippets
 	use("L3MON4D3/LuaSnip") -- snippet engine
