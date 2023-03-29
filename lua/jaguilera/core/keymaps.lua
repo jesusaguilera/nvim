@@ -73,3 +73,13 @@ keymap.set("n", "S", "<cmd>HopChar2BC<CR>", { noremap = false })
 -- visual mode (sneak-like)
 keymap.set("v", "s", "<cmd>HopChar2AC<CR>", { noremap = false })
 keymap.set("v", "S", "<cmd>HopChar2BC<CR>", { noremap = false })
+
+-- Codium remapping
+-- keymap.set("i", "<M-g>", function() return vim.fn["codeium#Accept"]() end, { expr = true })
+keymap.set("i", "<S-Right>", function()
+	return vim.fn["codeium#CycleCompletions"](1)
+end, { expr = true })
+keymap.set("i", "<S-Left>", function()
+	return vim.fn["codeium#CycleCompletions"](-1)
+end, { expr = true })
+-- keymap.set("i", "<M-x>", function() return vim.fn["codeium#Clear"]() end, { expr = true })
