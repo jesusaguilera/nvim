@@ -18,6 +18,7 @@ treesitter.setup({
 	autotag = { enable = true },
 	-- ensure these language parsers are installed
 	ensure_installed = {
+		"pug",
 		"json",
 		"javascript",
 		"typescript",
@@ -33,6 +34,8 @@ treesitter.setup({
 		"vim",
 		"dockerfile",
 		"gitignore",
+		"php",
+		"phpdoc",
 	},
 	-- auto install above language parsers
 	auto_install = true,

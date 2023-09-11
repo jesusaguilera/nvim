@@ -134,7 +134,7 @@ return packer.startup(function(use)
 	use("norcalli/nvim-colorizer.lua")
 
 	-- rainbow brackets
-	use("p00f/nvim-ts-rainbow")
+	use("HiPhish/nvim-ts-rainbow2")
 
 	-- Neural AI
 	use("dense-analysis/neural")

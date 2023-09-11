@@ -46,7 +46,7 @@ cmp.setup({
 		{ name = "luasnip" }, -- snippets
 		{ name = "buffer" }, -- text within current buffer
 		{ name = "path" }, -- file system paths
-		{ name = "cmp_tabnine" }, -- tabnine
+		-- { name = "cmp_tabnine" }, -- tabnine
 		{ name = "emoji" }, -- emojis
 	}),
 	-- configure lspkind for vs-code like icons
