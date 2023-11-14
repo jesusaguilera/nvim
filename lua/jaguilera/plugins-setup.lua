@@ -143,6 +143,9 @@ return packer.startup(function(use)
 	-- As Github Copilot
 	use("Exafunction/codeium.vim")
 
+	-- Indent guidelines
+	use("lukas-reineke/indent-blankline.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
