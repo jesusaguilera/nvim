@@ -12,6 +12,16 @@ keymap.set("i", "jj", "<ESC>")
 -- clean words highlighted from searching
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
+-- quotes wrapping
+keymap.set("v", '<leader>"', 'xi\"<ESC>pa\"<ESC>')
+-- parenthesis wrapping
+keymap.set("v", '<leader>(', 'xi(<ESC>pa)<ESC>')
+-- sunrround wrapping
+keymap.set("v", '<leader>[', 'xi[<ESC>pa]<ESC>')
+-- sunrround wrapping
+keymap.set("v", '<leader>{', 'xi{<ESC>pa}<ESC>')
+keymap.set("v", "<leader>'", "xi'<ESC>pa'<ESC>")
+
 -- remove character in normal mode but doesn't copy it
 keymap.set("n", "x", '"_x"')
 
@@ -67,12 +77,12 @@ keymap.set("n", "<leader>fC", "<cmd>Telescope git_commits<cr>") -- list of commi
 keymap.set("n", "<leader>fa", "<Plug>(neural_prompt)") -- find files within current working directory, respects .gitignore
 
 -- normal mode (sneak-like)
-keymap.set("n", "s", "<cmd>HopChar2AC<CR>", { noremap = false })
-keymap.set("n", "S", "<cmd>HopChar2BC<CR>", { noremap = false })
+--[[ keymap.set("n", "s", "<cmd>HopChar2AC<CR>", { noremap = false })
+keymap.set("n", "S", "<cmd>HopChar2BC<CR>", { noremap = false }) ]]
 
 -- visual mode (sneak-like)
-keymap.set("v", "s", "<cmd>HopChar2AC<CR>", { noremap = false })
-keymap.set("v", "S", "<cmd>HopChar2BC<CR>", { noremap = false })
+-- keymap.set("v", "s", "<cmd>HopChar2AC<CR>", { noremap = false })
+-- keymap.set("v", "S", "<cmd>HopChar2BC<CR>", { noremap = false })
 
 -- Codium remapping
 -- keymap.set("i", "<M-g>", function() return vim.fn["codeium#Accept"]() end, { expr = true })
