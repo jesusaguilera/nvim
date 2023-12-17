@@ -23,6 +23,11 @@ local keymap = vim.keymap -- for conciseness
 vim.o.updatetime = 250
 vim.cmd([[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]])
 
+
+-- Remove ^M characters from files
+vim.cmd([[autocmd BufReadPost * %s/\r//g]])
+
+
 -- Diagnostic symbols in the sign column {gutter}
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 for type, icon in pairs(signs) do
