@@ -82,13 +82,21 @@ return packer.startup(function(use)
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig")
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-	use({
+	--[[ use({
 		"glepnir/lspsaga.nvim",
 		branch = "main",
 		config = function()
 			require("lspsaga").setup({})
 		end,
-	}) -- enhanced lsp uis
+	})  ]]
+  use ({
+    'nvimdev/lspsaga.nvim',
+    after = 'nvim-lspconfig',
+    config = function()
+      require('lspsaga').setup({})
+    end,
+  })
+  -- enhanced lsp uis
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
@@ -123,7 +131,7 @@ return packer.startup(function(use)
 	-- jumpt to word or line
 	use({
 		"phaazon/hop.nvim",
-		branch = "v2", -- optional but strongly recommended
+    branch = "v2", -- optional but strongly recommended
 		config = function()
 			-- you can configure Hop the way you like here; see :h hop-config
 			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })

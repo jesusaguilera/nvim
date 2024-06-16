@@ -19,4 +19,4 @@ require("nightfox").setup({
 
 -- setup must be called before loading
 vim.opt.cursorline = false
-vim.cmd("colorscheme nightfox")
+vim.cmd("colorscheme nordfox")

@@ -22,6 +22,9 @@ keymap.set("v", '<leader>[', 'xi[<ESC>pa]<ESC>')
 keymap.set("v", '<leader>{', 'xi{<ESC>pa}<ESC>')
 keymap.set("v", "<leader>'", "xi'<ESC>pa'<ESC>")
 
+-- move in inser mode
+keymap.set("i", "<Right>", "<Esc>A")
+
 -- remove character in normal mode but doesn't copy it
 keymap.set("n", "x", '"_x"')
 
