@@ -46,6 +46,7 @@ return packer.startup(function(use)
 
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
+
 	-- comments differents languages on one file type
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 
