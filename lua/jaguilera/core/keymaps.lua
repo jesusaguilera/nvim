@@ -6,6 +6,9 @@ local keymap = vim.keymap -- for conciseness
 -- general keymaps
 --------------------
 
+-- show complete path
+keymap.set("n", "<leader>sp", ":echo @%<CR>") -- go to previous tab
+
 -- exit from insert mode
 keymap.set("i", "jj", "<ESC>")
 
