@@ -27,3 +27,6 @@ vim.cmd [[highlight DiagnosticVirtualTextWarn guifg=#e5c07b guibg=NONE gui=itali
 vim.cmd [[highlight DiagnosticVirtualTextInfo guifg=#61afef guibg=NONE gui=italic,bold]]
 vim.cmd [[highlight DiagnosticVirtualTextHint guifg=#98c379 guibg=NONE gui=italic,bold]]
 
+
+-- Define highlight groups for italic and bold virtual text of GITSIGNS
+vim.cmd [[highlight GitSignsCurrentLineBlame guifg=#4d4d4d guibg=NONE gui=italic,bold]]
