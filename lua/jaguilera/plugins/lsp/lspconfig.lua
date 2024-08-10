@@ -23,6 +23,11 @@ local keymap = vim.keymap -- for conciseness
 vim.o.updatetime = 250
 vim.cmd([[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]])
 
+-- Go to file with path alising (@/path/to/file)
+vim.cmd([[autocmd FileType javascript setlocal isfname+=@-@ ]]) -- Add @ to the list of file name characters
+vim.cmd([[autocmd FileType javascript setlocal includeexpr=substitute(v:fname,'^@\/','src/','') ]]) -- Adjust the include expression to replace @/ with src/
+
+
 
 -- Diagnostic symbols in the sign column {gutter}
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
@@ -59,7 +64,9 @@ local on_attach = function(client, bufnr)
 		keymap.set("n", "<leader>oi", ":TypescriptOrganizeImports<CR>") -- organize imports
 		keymap.set("n", "<leader>ru", ":TypescriptRemoveUnused<CR>") -- remove unused variables
 	end
+
 end
+
 
 -- used to enable autocompletion (assign to every lsp server config)
 local capabilities = cmp_nvim_lsp.default_capabilities()

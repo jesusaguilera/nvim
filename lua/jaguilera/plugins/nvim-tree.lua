@@ -31,5 +31,10 @@ nvim_tree.setup({
 				enable = false,
 			},
 		},
+    change_dir = {
+      enable = false,
+      global = false,
+      restrict_above_cwd = false,
+    },
 	},
 })
