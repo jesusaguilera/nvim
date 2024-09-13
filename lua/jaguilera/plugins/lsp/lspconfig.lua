@@ -59,7 +59,7 @@ local on_attach = function(client, bufnr)
 	keymap.set("n", "<ScrollWheelDown>", "L1j", { noremap = true, silent = true }) -- Prevent scrolling beyond last line
 
 	-- typescript specific keymaps (e.g. rename file and update imports)
-	if client.name == "tsserver" then
+	if client.name == "ts_ls" then
 		keymap.set("n", "<leader>rf", ":TypescriptRenameFile<CR>") -- rename file and update imports
 		keymap.set("n", "<leader>oi", ":TypescriptOrganizeImports<CR>") -- organize imports
 		keymap.set("n", "<leader>ru", ":TypescriptRemoveUnused<CR>") -- remove unused variables
@@ -72,10 +72,7 @@ end
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
 -- configure html server
-lspconfig["tsserver"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+lspconfig["ts_ls"].setup({})
 
 -- configure html server
 lspconfig["html"].setup({

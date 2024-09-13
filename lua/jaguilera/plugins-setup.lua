@@ -155,6 +155,13 @@ return packer.startup(function(use)
 	-- Indent guidelines
 	use("lukas-reineke/indent-blankline.nvim")
 
+  --[[ -- Avante plugin
+  use('yetone/avante.nvim')
+  use('hakonHarnes/img-clip.nvim')
+  use('github/copilot.vim')
+  use('pasky/claude.vim')
+  use('MeanderingProgrammer/render-markdown.nvim') ]]
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
